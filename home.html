@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLogin</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/icons8-login-64.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="home" class="">
+    <nav class="navbar navbar-expand-lg navbar-dark box mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">SMART LOGIN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button id="logoutBtn" class="border-btn btn btn-outline-warning">
+                Logout
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main h-100">
+      <div
+        class="container my-5 text-center h-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="box w-75 m-auto p-5">
+          <h1 id="username">Welcome</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/login.js"></script>
+    <script type="module" src="js/validation.js"></script>
+  </body>
+</html>

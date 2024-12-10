@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLogin</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/icons8-login-64.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container my-5 text-center">
+        <div class="box w-75 m-auto p-5">
+          <h1>Smart Login System</h1>
+          <input
+            type="text"
+            class="form-control my-3"
+            id="signupName"
+            placeholder="Enter your name"
+          />
+          <input
+            type="email"
+            class="form-control my-3"
+            id="signupEmail"
+            placeholder="Enter your email"
+          />
+
+          <input
+            type="password"
+            class="form-control my-3"
+            id="signupPassword"
+            placeholder="Enter password"
+          />
+          <p id="signupMessage" class="d-none">
+            <span id="successMessage" class="text-success m-3 d-none"
+              >Success</span
+            >
+            <span id="errorMessage" class="text-danger m-3 d-none"
+              >All inputs are required</span
+            >
+            <span id="emailerrorMessage" class="text-danger m-3 d-none"
+              >Email already exist</span
+            >
+            <span id="emailinvalid" class="text-danger m-3 d-none"
+              >Please enter a valid email address</span
+            >
+          </p>
+
+          <button id="SignupBtn" class="btn btn-outline-info w-100 my-3">
+            Sign Up
+          </button>
+          <p class="text-white">
+            You have an account?
+            <a class="text-white" href="./index.html">Signin</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/validation.js"></script>
+  </body>
+</html>
